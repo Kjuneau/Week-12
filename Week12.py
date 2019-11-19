@@ -52,3 +52,10 @@ def Intersection(l1,l2):
         if x in l2:
             l3.append(x)
     return l3
+
+def NotIn(l1,l2):
+    l3 = []
+    for x in l1:
+        if x not in l2:
+            l3.append(x)
+    return l3
