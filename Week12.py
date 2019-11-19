@@ -13,3 +13,12 @@ def LoadFile(filename):
     for x in file:
         file[file.index(x)] = x.rstrip('\n\r ')
     return file
+
+def UpdateString(string1,string2,index):
+    new_string = ''
+    for x in range(len(string1)):
+        if x == index:
+            new_string += string2
+        elif x != index:
+            new_string += string1[x]
+    return new_string
