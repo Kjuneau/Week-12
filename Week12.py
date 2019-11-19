@@ -38,3 +38,10 @@ def ScoreFinder(player_names,player_scores,player):
         PrintOutput('player not found')
     else:
         PrintOutput((player_names[player_scores.index(score)]+' got a score of '+str(score)))
+
+def Union(l1,l2):
+    l3 = l1 + l2
+    for x in l3:
+        while l3.count(x) > 1:
+            l3.remove(x)
+    return l3
