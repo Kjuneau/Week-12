@@ -45,3 +45,10 @@ def Union(l1,l2):
         while l3.count(x) > 1:
             l3.remove(x)
     return l3
+
+def Intersection(l1,l2):
+    l3 = []
+    for x in l1:
+        if x in l2:
+            l3.append(x)
+    return l3
