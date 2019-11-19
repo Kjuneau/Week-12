@@ -22,3 +22,9 @@ def UpdateString(string1,string2,index):
         elif x != index:
             new_string += string1[x]
     return new_string
+
+def FindWordCount(List,String):
+    n = 0
+    for x in List:
+        n += x.count(String)
+    return n
