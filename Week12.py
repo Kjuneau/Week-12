@@ -28,3 +28,13 @@ def FindWordCount(List,String):
     for x in List:
         n += x.count(String)
     return n
+
+def ScoreFinder(player_names,player_scores,player):
+    score = ''
+    for x in player_names:
+        if x.lower() == player.lower():
+            score = player_scores[player_names.index(x)]
+    if score == '':
+        PrintOutput('player not found')
+    else:
+        PrintOutput((player_names[player_scores.index(score)]+' got a score of '+str(score)))
